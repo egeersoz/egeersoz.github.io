@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "Spoiled by Ease of Use"
-date:   2014-09-07
+date:   2014-09-10
 categories: general
 ---
 
-One of the things I was meta-cognitively aware of yesterday when I was trying to get Jekyll to work on Github Pages was my level of annoyance. I started out with a lot of motivation, but with every obstacle I faced, my enthusiasm waned and gave way to frustration. All the guides, tutorials and documentations I read were slightly different, and the errors I was running into were not documented at all. I kept telling myself that the whole process was way more difficult than it needed to be. Why can't it be a simple matter of double-clicking an installer and walking through the steps in a wizard? At that moment I had an epiphany that stunned me.
+One of the things I was meta-cognitively aware of last Saturday when I was trying to get Jekyll to work on Github Pages was my level of annoyance. I started out with a lot of motivation, but with every obstacle I faced, my enthusiasm waned and gave way to frustration. All the guides, tutorials and documentations I read were slightly different, and the errors I was running into were not documented at all. I kept telling myself that the whole process was way more difficult than it needed to be. Why can't it be a simple matter of double-clicking an installer and walking through the steps in a wizard? At that moment I had an epiphany that stunned me.
 
 I had been spoiled by ease of use.
 
