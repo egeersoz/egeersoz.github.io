@@ -24,7 +24,7 @@ brutus = Cat.new
 brutus.class           # => Cat
 {% endhighlight %}
 
-Here, we're defining a Cat class and then initiating a new object of that class, which we are calling brutus. When we run brutus.class, we're running the class() method on the brutus object. The question is, where does this class() method come from? After all, it is not defined inside the Cat class.
+What we are doing here should be fairly familiar. We're defining a Cat class and then initiating a new object of that class, which we are calling brutus. When we run brutus.class, we're running the class() method on the brutus object. The question is, where does this class() method come from? After all, it is not defined inside the Cat class. The only thing we have in there is a meow() method.
 
 Let's explore this a bit further by chaining the superclass() method to what we have.
 
@@ -32,7 +32,7 @@ Let's explore this a bit further by chaining the superclass() method to what we 
 brutus.class.superclass     # => Object
 {% endhighlight %}
 
-Interesting. So brutus is an instance of the Cat class, which in turn inherits from (or is an) Object. Strange, right? But that is in fact that case in Ruby: everything, including classes, is an object.
+Interesting. So brutus is an instance of the Cat class, which in turn inherits from (or is an) Object. Strange, right? But that is in fact the case in Ruby: everything, including classes, is an object. And Object is where commonly used methods like class() are defined. Since Cat inherits from Object, we can run the class() method on an instance of Cat (i.e. brutus) and get something back (as opposed to an error message).
 
 But wait a minute. If a class is an object, that means every class has to be an instance of something. In other words, if brutus is an instance of Cat, then Cat must be an instance of...
 
@@ -42,7 +42,7 @@ Cat.class         # => Class
 
 So the cat class inherits from Object, and is itself an instance of the Class class. The fact that it is an instance of Class is what allows us to use the new() method to initiate a new instance of Cat (which itself does not define the new() method).
 
-But what about Class itself? Is it an object? Indeed it is:
+But what about Class itself? Let's examine it:
 
 {% highlight bash %}
 Class.class            # => Class
