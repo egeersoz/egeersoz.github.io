@@ -1,8 +1,11 @@
 ---
-layout: page
+layout: frontpage
 title: About Me
 permalink: /about/
+comments: False
 ---
+
+I'm a web developer. My current focus is Ruby on Rails.
 
 I started my career in the enterprise software world. After playing support and consultant roles and interfacing with customers in a variety of settings, I decided that I'm tired of "enterprise" and started to look for something more exciting. I dabbled in front-end programming for a while, and eventually taught myself Ruby on Rails. I have been in love with it ever since, to the point where I decided to pursue it as a full-time career.
 
