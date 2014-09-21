@@ -3,6 +3,7 @@ layout: post
 title:  "Using Jekyll and GitHub Pages for Blogging"
 date:   2014-09-06 19:06:47
 categories: jekyll update
+comments: True
 ---
 
 After exploring several options for a new programming blog, I settled on GitHub Pages, with Jekyll powering it behind the scenes. Main reasons for this decision were:

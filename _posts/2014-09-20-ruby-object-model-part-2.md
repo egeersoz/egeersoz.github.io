@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby Object Model, Part 2"
 date:   2014-09-20
 categories: metaprogramming
+comments: True
 ---
 
 Welcome to Part 2 of the Ruby Object Model. In [Part 1]({% post_url 2014-09-12-ruby-object-model-part-1 %}), we found that:

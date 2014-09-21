@@ -3,6 +3,7 @@ layout: post
 title:  "Ruby Object Model, Part 1"
 date:   2014-09-12
 categories: metaprogramming
+comments: True
 ---
 
 If you are like me and your first exposure to Ruby was through Ruby on Rails, you may be unfamiliar with many of the underlying mechanics (the "magic") of the language itself. However, there comes a point in your career as a Rails developer where you have to pop the hood and take a look at what is going on inside, either to troubleshoot a complicated issue or to start writing your own modules or engines. In this post, we're going to take a look at Ruby's object model and talk about some of its implications.
