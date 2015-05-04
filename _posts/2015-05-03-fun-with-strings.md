@@ -99,7 +99,7 @@ end
 
 We have two loops here. First, we're looping through the array containing the words in the string. Inside that loop, we have another loop where we're weirdcasing each word, and then replacing the original word in the word array with it. For instance, the word "this" becomes "ThIs". In the end, we're joining the words using a single space.
 
-Of course, Ruby has an incredible number of shorthands and shortcuts, and the sheer expressiveness of the language allows for all kinds of clever tricks. There are many other ways to write the code above. That's what I like about Codewars. Seeing other people's solutions to the same problem is a great way to learn. For example, here's the top-voted solution for this problem:
+Of course, Ruby has an incredible number of shorthands and shortcuts, and the sheer expressiveness of the language allows for all kinds of clever tricks. There are many other ways to solve the problem we just looked at. That's what I like about Codewars. Seeing other people's solutions to the same problem is a great way to learn. For example, here's the top-voted solution for this problem:
 
 {% highlight ruby %}
 def weirdcase(string)
