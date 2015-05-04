@@ -61,7 +61,7 @@ Pretty neat, right? We're modifying the string in-place as opposed to converting
 
 Okay, now suppose an additional requirement is introduced: the string parameters can now contain spaces. How can we account for that?
 
-It's actually not a big deal. Calling `upcase` or `downcase` on a space doesn't do anything, so our code would continue to function as is. But we don't want to be lazy like that! We are good programmers and we should write code that's expressive.
+It's actually not a big deal. Calling `upcase` or `downcase` on a space doesn't do anything, so our code would continue to function as is. But we don't want to be lazy like that! At least I don't. :)
 
 {% highlight ruby %}
 def weirdcase(string)
