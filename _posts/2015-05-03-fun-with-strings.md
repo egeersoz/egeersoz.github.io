@@ -109,4 +109,4 @@ end
 
 Wow! It's a very clever solution: characters are extracted from the string in groups of two (which is what the `gsub` with regex '\w{1,2}' does), and then the `capitalize` function capitalizes the first one. This satisfies the problem requirements neatly.
 
-Personally though, I like to be able to understand the code I write if I come back to it later. So I always write things out explicity for the sake of clarity. Besides, overly-creative solutions aren't always a good idea for production because it's easy to make mistakes and forget about edge-cases when trying to be clever.
+Personally though, I like to be able to understand the code I write if I come back to it later. So I always write things out explicity for the sake of clarity. Besides, overly-creative solutions aren't always a good idea for production because it can make bug-fixing more difficult. As a rule of thumb, reading code is harder than writing it, so if you were at your cleverest at the time you wrote it, you are by definition not clever enough to debug it later. ;)
