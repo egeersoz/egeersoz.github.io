@@ -8,7 +8,7 @@ comments: True
 
 Another day, another fun and exciting challenge! For this one, we're going to analyze some pirate-speak and try to figure out what they might be saying. Yarrr!
 
-For this scenario, we're parleying with a pirate captain whose ship is about to attack our coastal town. The problem is that he's speaking in anagrams, and we need to figure out, quickly and efficiently, what it is that he is saying. Fortunately, we have a bunch of dictionaries that we can use to decipher their enigmatic language.
+For this scenario, we're parleying with a pirate captain whose ship is about to attack our coastal town. The problem is that he's speaking in anagrams, and we need to figure out, quickly and efficiently, what he is saying. Fortunately, we have a bunch of dictionaries that we can use to decipher their enigmatic language.
 
 Our goal: write a function that takes a string and an array containing the dictionary words, and return an array with elements that are an anagram of that string. If there are no matches, an empty array should be returned.
 
