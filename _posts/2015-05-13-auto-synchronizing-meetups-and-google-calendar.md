@@ -35,9 +35,9 @@ At a high level, the code follows these steps:
 
 We're using the following tools:
 
-Google API Ruby Client: This acts as a wrapper around the Google API. It also includes the Signet gem, which contains methods for OAuth2 (the second version of OmniAuth) that Google requires for most of their services.
+[Google API Ruby Client](https://github.com/google/google-api-ruby-client): This acts as a wrapper around the Google API. It also includes the Signet gem, which contains methods for OAuth2 (the second version of OmniAuth) that Google requires for most of their services.
 
-Meetup HTTP-REST API: This is a "naked" API that allows us to send HTTP requests to various end-points at Meetup.com and receive data in response.
+[Meetup API](http://www.meetup.com/meetup_api/): This is a RESTful HTTP interface that allows us to send requests to various end-points at Meetup.com and receive data in response.
 
 Without further delay, let's examine the code step-by-step!
 
@@ -87,7 +87,9 @@ Out of those discovered api methods, we're calling `events.list` on the next lin
 The events are hashes nested inside the `items` key of the JSON-formatted response, so we take them and convert them to an array (that's what `client.execute(stuff).data['items'].to_a` is doing). If that sounds confusing, don't worry. What you need to know is that we'll end up with an array of hashes, like this:
 
 {% highlight bash %}
-[{"name" => "Hike at the Park", "location" => "2341 Zilker Ave"}, {"name" => "Zoe's Birthday", "location" => "12893 S Congress Ave"}, {"name" => "Hanging out with Angell", "location" => "7329 Sasquatch Dr"}]
+[{"name" => "Hike at the Park", "location" => "2341 Zilker Ave"}, 
+{"name" => "Zoe's Birthday", "location" => "12893 S Congress Ave"}, 
+{"name" => "Hanging out with Angell", "location" => "7329 Sasquatch Dr"}]
 {% endhighlight %}
 
 This is a simplified version of course (the actual event data contains a ton more detail) but you get the idea.
@@ -96,7 +98,7 @@ Next, we need to compare and contrast the lists. If an event exists on the meetu
 
 Here's the fun part about the comparison though: in order to check if an event on one list exists in the other, there needs to be a way to uniquely identify them. I considered several options. Names obviously can't be used, since two events can have the same name (especially if they are recurring, e.g. "Monthly River Walk"). Can the name and the time be used in conjunction? After all, a "Monthly River Walk" that happens on June 5th, 2015 at 9am is going to be pretty unique. The problem with that approach is that both the name and the time are prone to change, so they can't be used to uniquely identify the event either.
 
-After doing some research, I noticed that Google Calendar events have an option called 'ExtendedProperties', which allow setting custom properties as key-value pairs. And since each meetup event has a unique id number, I'm simply assigning them to the Google Event when I add it:
+After doing some research, I noticed that Google Calendar events have an option called **ExtendedProperties**, which allow setting custom properties as key-value pairs. And since each meetup event has a unique id number, I'm simply assigning them to the Google Event when I add it:
 
 {% highlight ruby %}
 body = { 'summary'            => meetup_event["name"],
