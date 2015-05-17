@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Auto-Synchronizing Meetups and Google Calendar"
-date:   2015-05-13
+date:   2015-05-16
 categories: general
 comments: True
 ---
