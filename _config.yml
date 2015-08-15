@@ -1,4 +1,5 @@
 # Site settings
+permalink: /blog/:categories/:year/:month/:day/:title.html
 title: Ruby Zen Garden
 email: ege.ersoz@gmail.com
 description: Tips and tricks for mastering the Ruby programming language.
