@@ -2,7 +2,7 @@
 title: Ruby Zen Garden
 email: ege.ersoz@gmail.com
 description: Tips and tricks for mastering the Ruby programming language.
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://egeersoz.github.io" # the base hostname & protocol for your site
 github_username:  egeersoz
 
