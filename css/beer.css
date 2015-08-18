@@ -1,0 +1,126 @@
+body {
+	text-align: center;
+	font: Oxygen, Helvetica, "Lucida Grande", Arial, sans-serif;
+	color: #DFDFDF;
+	text-shadow: 1px 2px 2px black;
+}
+
+h1 {
+	font-size: 5em;
+}
+
+form {
+	margin-top: 40px;
+}
+
+form > input {
+	font: 25px Oxygen, Helvetica, "Lucida Grande", Arial, sans-serif;;
+	border-radius: 3px;
+	border: 3px solid gray;
+	background-color: rgba(255,153,0,0.7);
+	padding: 10px;
+}
+
+#submit {
+	background-color: #009933;
+	color: #DFDFDF;
+	text-shadow: 1px 2px 2px black;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    #DFDFDF;
+  text-shadow: 1px 2px 2px black;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #DFDFDF;
+   opacity:  1;
+   text-shadow: 1px 2px 2px black;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #DFDFDF;
+   opacity:  1;
+   text-shadow: 1px 2px 2px black;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #DFDFDF;
+   text-shadow: 1px 2px 2px black;
+}
+
+#portrait {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 3px solid gray;
+}
+
+p.para {
+	margin: 3em 8em;
+	font-size: 1.4em;
+}
+
+.content {
+	margin-top: 9em;
+	margin-bottom: 4em;
+}
+
+.col-table {
+	margin-left: auto;
+	margin-right: auto;
+  display: table;
+	text-align: center;
+}
+
+.column {
+	display: table-cell;
+}
+
+.background-video {
+		position: fixed;           
+    right: 0;
+    bottom: 0;
+    z-index: -1;               
+
+    min-width: 100%;           
+    min-height: 100%;
+    width: auto;               
+    height: auto;
+
+    top: 50%;                  
+    left: 52%;                 
+
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%); 
+    background-size: cover;
+}
+
+#left-col {
+	padding-right: 15px;
+}
+
+#right-col {
+	padding-right: 15px;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  height: 4em;
+  z-index: 10;
+}
+
+.footer p {
+  font-size: 1em;
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  bottom: 5px;
+}
+
+.footer p.credit {
+  text-align: right;
+  right: 2.5%;
+}
+
